@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://pitchprint.io/rsc/js/client.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Custom Integration</title>
+  </head>
+
+  <body>
+    <div class="d-flex justify-content-center">
+      <div id="pp_loader_div">
+        <img src="https://pitchprint.io/rsc/images/loaders/spinner_new.svg" />
+      </div>
+      <button id="launch_btn">Edit Design</button>
+    </div>
+    <br />
+    <div class="d-flex justify-content-center">
+      <div id="pp_preview_div"></div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <!-- <input type="text" onkeyup="searchFunction()" class="search-input" placeholder="Search Fonts..." /> -->
+      <button onclick="fontSorting()">Sort</button>
+    </div>
+    <div class="flist">
+      <div rv-class-is-user="font.isUser" rv-data-idx="%font%" rv-class-selected="font.selected" rv-set_font="font" data-idx="0" data-font="Allan" style="font-family: Allan;">Allan</div>
+      <div rv-class-is-user="font.isUser" rv-data-idx="%font%" rv-class-selected="font.selected" rv-set_font="font" data-idx="1" data-font="vineta bt" style="font-family: &quot;vineta bt&quot;;">vineta bt</div>
+      <div rv-class-is-user="font.isUser" rv-data-idx="%font%" rv-class-selected="font.selected" rv-set_font="font" data-idx="2" data-font="Comic Neue" style="font-family: &quot;Comic Neue&quot;;">Comic Neue</div>
+      <div rv-class-is-user="font.isUser" rv-data-idx="%font%" rv-class-selected="font.selected" rv-set_font="font" data-idx="3" data-font="Bad Script" style="font-family: &quot;Bad Script&quot;;">Bad Script</div>
+      <div rv-class-is-user="font.isUser" rv-data-idx="%font%" rv-class-selected="font.selected" rv-set_font="font" data-idx="4" data-font="Akronim" style="font-family: Akronim;">Akronim</div>
+    </div>
+
+        <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
